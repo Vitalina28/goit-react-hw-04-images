@@ -19,7 +19,7 @@ export default function App() {
   const [selectedImage, setSelectedImage] = useState('');
 
   const handleFormSubmit = async searchQuery => {
-    setSearchQuery(searchQuery);
+    setSearchQuery(searchQuery.trim());
     setImages([]);
     setPage(1);
   };
