@@ -21,7 +21,7 @@ export const Modal = ({ onClose, selectedImage }) => {
   return createPortal(
     <div className={css.Overlay} onClick={onClose}>
       <div className={css.Modal}>
-        <img src={selectedImage.largeImageURL} alt={selectedImage.tags} />
+        <img src={selectedImage} alt="" />
       </div>
     </div>,
     modalRoot
